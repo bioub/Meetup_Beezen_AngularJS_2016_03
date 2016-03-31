@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Helloworld</title>
+    <script>
+        (function() {
+            'use strict';
+
+            window.onload = function() {
+                var inputElt = document.getElementById('saisie');
+                var spanElt = document.getElementById('boite');
+
+                inputElt.onkeyup = function () {
+                    spanElt.textContent = inputElt.value;
+                };
+            };
+        }());
+    </script>
+</head>
+<body>
+<div>
+    Prénom : <input name="prenom" id="saisie" class="firstName">
+</div>
+<p>
+    Bonjour <span id="boite" class="result"></span>
+</p>
+</body>
+</html>

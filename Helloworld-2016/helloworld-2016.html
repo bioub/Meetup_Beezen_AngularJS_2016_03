@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Helloworld</title>
+</head>
+<body>
+<div>
+    Prénom : <input name="prenom" id="saisie" class="firstName">
+</div>
+<p>
+    Bonjour <span id="boite" class="result"></span>
+</p>
+<script>
+    (function() {
+        'use strict';
+
+        var inputElt = document.body.querySelector('.firstName');
+        var spanElt = document.body.querySelector('.result');
+
+        inputElt.addEventListener('input', function() {
+            spanElt.innerHTML = inputElt.value;
+        });
+    }());
+</script>
+</body>
+</html>

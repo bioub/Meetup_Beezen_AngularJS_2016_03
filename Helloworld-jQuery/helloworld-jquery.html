@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Helloworld</title>
+</head>
+<body>
+<div>
+    Prénom : <input name="prenom" id="saisie" class="firstName">
+</div>
+<p>
+    Bonjour <span id="boite" class="result">test</span>
+</p>
+<script src="http://code.jquery.com/jquery-1.12.1.js"></script>
+<script>
+    (function() {
+        'use strict';
+
+        var $inputElt = $('.firstName');
+        var $spanElt = $('.result');
+
+        $inputElt.on('input', function() {
+            $spanElt.html('<b>' + $inputElt.val() + '</b>');
+        });
+    }());
+</script>
+</body>
+</html>

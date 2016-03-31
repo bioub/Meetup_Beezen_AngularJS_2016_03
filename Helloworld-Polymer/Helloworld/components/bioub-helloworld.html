@@ -1,0 +1,20 @@
+<!-- components/bioub-helloworld.html -->
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="bioub-helloworld">
+    <template>
+        <p>Bonjour <span>{{qui}}</span></p>
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: 'bioub-helloworld',
+        properties: {
+            qui: {
+                type: String,
+                value: ''
+            }
+        }
+    });
+</script>

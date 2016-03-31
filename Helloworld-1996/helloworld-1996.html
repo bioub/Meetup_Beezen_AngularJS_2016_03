@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Helloworld</title>
+    <script>
+        function helloworld() {
+            var inputElt = document.getElementsByName('prenom')[0];
+            var spanElt = document.getElementsByTagName('span')[0];
+
+            spanElt.firstChild.nodeValue = inputElt.value;
+        }
+    </script>
+</head>
+<body>
+<div>
+    Prénom :
+    <input name="prenom" id="saisie" class="firstName" onkeyup="helloworld();">
+</div>
+<p>
+    Bonjour <span id="boite" class="result"> </span>
+</p>
+</body>
+</html>

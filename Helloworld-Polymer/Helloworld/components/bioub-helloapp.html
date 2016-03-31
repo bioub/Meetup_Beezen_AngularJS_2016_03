@@ -1,0 +1,16 @@
+<!-- components/bioub-app.html -->
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="bioub-helloworld.html">
+
+<dom-module id="bioub-helloapp">
+    <template>
+        <div>Prénom : <input value="{{prenom::input}}"></div>
+        <bioub-helloworld qui="{{prenom}}"></bioub-helloworld>
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: 'bioub-helloapp'
+    });
+</script>
